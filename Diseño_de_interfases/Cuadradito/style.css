@@ -11,20 +11,20 @@ body {
   justify-content: center;
   align-items: flex-start;
   min-height: 100vh;
-  padding: 32px 16px;
+  padding: 3.5% 2%;
 }
 
 .contenedor {
   width: min(900px, 100%);
   display: grid;
-  gap: 24px;
+  gap: 2.5%;
 }
 
 .tarjeta {
   background: white;
-  border-radius: 16px;
-  padding: 24px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border-radius: 2%;
+  padding: 3%;
+  box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.08);
 }
 
 h1, h2 {
@@ -33,15 +33,15 @@ h1, h2 {
 
 .controles-de-color {
   display: flex;
-  gap: 12px;
-  margin: 16px 0;
+  gap: 1.3%;
+  margin: 2.5% 0;
   flex-wrap: wrap;
 }
 
 button {
   border: none;
-  border-radius: 999px;
-  padding: 10px 16px;
+  border-radius: 50%;
+  padding: 1.2% 2%;
   cursor: pointer;
   font-weight: 600;
   transition: transform 0.2s ease;
@@ -56,28 +56,28 @@ button:hover {
 .boton-azul { background: #3b82f6; color: white; }
 
 #cuadraditoDeColores {
-  width: 200px;
-  height: 200px;
+  width: 22%;
+  aspect-ratio: 1 / 1;
   background: #9ca3af;
-  border-radius: 16px;
-  margin-top: 8px;
-  box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.08);
+  border-radius: 8%;
+  margin-top: 0.8%;
+  box-shadow: inset 0 0 0 0.2rem rgba(0, 0, 0, 0.08);
 }
 
 .task-form {
   display: flex;
-  gap: 10px;
-  margin-bottom: 16px;
+  gap: 1.1%;
+  margin-bottom: 2%;
   flex-wrap: wrap;
 }
 
 input {
   flex: 1;
-  min-width: 240px;
-  border: 1px solid #d1d5db;
-  border-radius: 999px;
-  padding: 10px 14px;
-  font-size: 16px;
+  min-width: 26%;
+  border: 0.1rem solid #d1d5db;
+  border-radius: 50%;
+  padding: 1.2% 1.5%;
+  font-size: 100%;
 }
 
 .btn-add {
@@ -91,7 +91,7 @@ ul {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1.1%;
 }
 
 li {
@@ -99,13 +99,13 @@ li {
   justify-content: space-between;
   align-items: center;
   background: #f9fafb;
-  padding: 12px 14px;
-  border-radius: 12px;
-  border: 1px solid #e5e7eb;
+  padding: 1.3% 1.5%;
+  border-radius: 1.2rem;
+  border: 0.1rem solid #e5e7eb;
 }
 
 .delete-btn {
   background: #ef4444;
   color: white;
-  padding: 8px 12px;
+  padding: 0.9% 1.3%;
 }
