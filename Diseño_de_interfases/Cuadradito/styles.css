@@ -14,13 +14,13 @@ body {
   padding: 32px 16px;
 }
 
-.container {
+.contenedor {
   width: min(900px, 100%);
   display: grid;
   gap: 24px;
 }
 
-.card {
+.tarjeta {
   background: white;
   border-radius: 16px;
   padding: 24px;
@@ -31,7 +31,7 @@ h1, h2 {
   margin-top: 0;
 }
 
-.color-controls {
+.controles-de-color {
   display: flex;
   gap: 12px;
   margin: 16px 0;
@@ -51,11 +51,11 @@ button:hover {
   transform: translateY(-1px);
 }
 
-.btn-red { background: #ef4444; color: white; }
-.btn-green { background: #10b981; color: white; }
-.btn-blue { background: #3b82f6; color: white; }
+.boton-rojo { background: #ef4444; color: white; }
+.boton-verde { background: #10b981; color: white; }
+.boton-azul { background: #3b82f6; color: white; }
 
-#colorBox {
+#cuadraditoDeColores {
   width: 200px;
   height: 200px;
   background: #9ca3af;

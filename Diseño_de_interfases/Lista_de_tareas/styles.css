@@ -14,11 +14,11 @@ body {
   color: #0f172a;
 }
 
-.task-page {
+.pagina-tareas {
   width: min(700px, 100%);
 }
 
-.task-card {
+.tarjeta-tareas {
   background: white;
   border-radius: 20px;
   padding: 28px;
@@ -38,7 +38,7 @@ h1 {
   margin-bottom: 8px;
 }
 
-.task-form {
+.formulario-tareas {
   display: flex;
   gap: 10px;
   margin: 20px 0;
@@ -54,7 +54,7 @@ input {
   font-size: 16px;
 }
 
-.btn-add {
+.boton-agregar {
   background: #2563eb;
   color: white;
   border: none;
@@ -64,7 +64,7 @@ input {
   font-weight: 600;
 }
 
-.task-list {
+.lista-tareas {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -73,7 +73,7 @@ input {
   gap: 10px;
 }
 
-.task-list li {
+.lista-tareas li {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -83,7 +83,7 @@ input {
   border: 1px solid #e2e8f0;
 }
 
-.delete-btn {
+.boton-eliminar {
   background: #ef4444;
   color: white;
   border: none;

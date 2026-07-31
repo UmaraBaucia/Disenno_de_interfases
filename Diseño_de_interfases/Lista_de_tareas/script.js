@@ -1,35 +1,35 @@
-const taskInput = document.getElementById('taskInput');
-const addTaskBtn = document.getElementById('addTaskBtn');
-const taskList = document.getElementById('taskList');
+const entradaTarea = document.getElementById('entradaTarea');
+const botonAgregarTarea = document.getElementById('botonAgregarTarea');
+const listaTareas = document.getElementById('listaTareas');
 
-function addTask() {
-  const text = taskInput.value.trim();
+function agregarTarea() {
+  const texto = entradaTarea.value.trim();
 
-  if (!text) {
-    taskInput.focus();
+  if (!texto) {
+    entradaTarea.focus();
     return;
   }
 
   const li = document.createElement('li');
   const span = document.createElement('span');
-  span.textContent = text;
+  span.textContent = texto;
 
-  const deleteBtn = document.createElement('button');
-  deleteBtn.textContent = 'Eliminar';
-  deleteBtn.className = 'delete-btn';
-  deleteBtn.addEventListener('click', () => li.remove());
+  const botonEliminar = document.createElement('button');
+  botonEliminar.textContent = 'Eliminar';
+  botonEliminar.className = 'boton-eliminar';
+  botonEliminar.addEventListener('click', () => li.remove());
 
   li.appendChild(span);
-  li.appendChild(deleteBtn);
-  taskList.appendChild(li);
-  taskInput.value = '';
-  taskInput.focus();
+  li.appendChild(botonEliminar);
+  listaTareas.appendChild(li);
+  entradaTarea.value = '';
+  entradaTarea.focus();
 }
 
-addTaskBtn.addEventListener('click', addTask);
+botonAgregarTarea.addEventListener('click', agregarTarea);
 
-taskInput.addEventListener('keydown', (event) => {
+entradaTarea.addEventListener('keydown', (event) => {
   if (event.key === 'Enter') {
-    addTask();
+    agregarTarea();
   }
 });

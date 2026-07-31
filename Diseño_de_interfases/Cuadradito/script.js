@@ -1,5 +1,5 @@
-const colorBox = document.getElementById('colorBox');
+const cuadraditoDeColores = document.getElementById('cuadraditoDeColores');
 
-function changeColor(color) {
-  colorBox.style.backgroundColor = color;
+function cambiarColor(color) {
+  cuadraditoDeColores.style.backgroundColor = color;
 }
