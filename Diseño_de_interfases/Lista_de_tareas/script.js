@@ -3,7 +3,7 @@ const botonAgregarTarea = document.getElementById('botonAgregarTarea');
 const listaTareas = document.getElementById('listaTareas');
 
 function agregarTarea() {
-  const texto = entradaTarea.value.trim();
+  const texto = entradaTarea.value;
 
   if (!texto) {
     entradaTarea.focus();
@@ -11,15 +11,13 @@ function agregarTarea() {
   }
 
   const li = document.createElement('li');
-  const span = document.createElement('span');
-  span.textContent = texto;
 
   const botonEliminar = document.createElement('button');
   botonEliminar.textContent = 'Eliminar';
   botonEliminar.className = 'boton-eliminar';
   botonEliminar.addEventListener('click', () => li.remove());
 
-  li.appendChild(span);
+  li.appendChild(document.createTextNode(texto));
   li.appendChild(botonEliminar);
   listaTareas.appendChild(li);
   entradaTarea.value = '';
