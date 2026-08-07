@@ -26,31 +26,20 @@ h1, h2 {
   margin-top: 0;
 }
 
-.controles-de-color {
+.controles_de_color {
   display: flex;
   gap: 1.3%;
   margin: 2.5% 0;
   flex-wrap: wrap;
 }
 
-button {
-  border: none;
-  border-radius: 50%;
-  padding: 1.2% 2%;
-  cursor: pointer;
-  font-weight: 600;
-  transition: transform 0.2s ease;
-}
+/* Removed incorrect 'boton' selector (was a typo). Button styles are applied to the element selector below. */
 
-button:hover {
-  transform: translateY(-1px);
-}
+.boton_rojo { background: #ef4444; color: white; }
+.boton_verde { background: #10b981; color: white; }
+.boton_azul { background: #3b82f6; color: white; }
 
-.boton-rojo { background: #ef4444; color: white; }
-.boton-verde { background: #10b981; color: white; }
-.boton-azul { background: #3b82f6; color: white; }
-
-#cuadraditoDeColores {
+#cuadradito_de_colores {
   width: 22%;
   height: 60%;
   aspect-ratio: 1 / 1;
@@ -60,7 +49,7 @@ button:hover {
   box-shadow: inset 0 0 0 0.2rem rgba(0, 0, 0, 0.08);
 }
 
-.task-form {
+.task_form {
   display: flex;
   gap: 1.1%;
   margin-bottom: 2%;
@@ -81,13 +70,17 @@ input {
   color: white;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 1.1%;
+button {
+  border: none;
+  border-radius: 50%;
+  padding: 1.2% 2%;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
 }
 
 li {
@@ -100,7 +93,7 @@ li {
   border: 0.1rem solid #e5e7eb;
 }
 
-.delete-btn {
+.eliminar_btn {
   background: #ef4444;
   color: white;
   padding: 0.9% 1.3%;
