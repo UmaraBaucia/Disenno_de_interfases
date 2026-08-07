@@ -4,12 +4,7 @@ const listaTareas = document.getElementById('listaTareas');
 
 function agregarTarea() {
   const texto = entradaTarea.value;
-
-  if (!texto) {
-    entradaTarea.focus();
-    return;
-  }
-
+  
   const li = document.createElement('li');
 
   const botonEliminar = document.createElement('button');
