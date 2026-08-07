@@ -33,8 +33,6 @@ h1, h2 {
   flex-wrap: wrap;
 }
 
-/* Removed incorrect 'boton' selector (was a typo). Button styles are applied to the element selector below. */
-
 .boton_rojo { background: #ef4444; color: white; }
 .boton_verde { background: #10b981; color: white; }
 .boton_azul { background: #3b82f6; color: white; }
@@ -49,7 +47,7 @@ h1, h2 {
   box-shadow: inset 0 0 0 0.2rem rgba(0, 0, 0, 0.08);
 }
 
-.task_form {
+.from_tareas {
   display: flex;
   gap: 1.1%;
   margin-bottom: 2%;
@@ -65,7 +63,7 @@ input {
   font-size: 100%;
 }
 
-.btn-add {
+.btn_add {
   background: #111827;
   color: white;
 }
